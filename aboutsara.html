@@ -43,12 +43,14 @@
               <div class="col border border-3">
 
                     <p class="h4">Meet our "GPAssistant" <span class="fs-1">C.E.O.</span> </p>
-                    <p>(The Chief Extra Oatmeal)</p>
+                    <p id="myJob" onclick="changeJob()">The Chief Extra Oatmeal</p>
+                     <button onclick="this.innerHTML='The Chief Extra Oatmeal'">Reset job</button>
                     <p>Sara Ketcham (she/her) </p>
               </div>
               <div class="col">
-                <img class="img-fluid d-none d-sm-block"src="https://media.istockphoto.com/id/1178394116/photo/woman-eating-an-oatmeal.jpg?s=612x612&w=0&k=20&c=aLub71km4sbtRKcfnYhTnsPBSZYLB__VB3Ekpe10k9Y=" alt="">
-  
+
+                <img id= "myImage" onclick="changeImage()" class="img-fluid d-none d-sm-block"src="woman.jpeg" alt="">
+              <h6 class="text-center">click the image to see what happens!</h6>
               </div>
             </div>
           </div>
@@ -61,8 +63,7 @@
               </div>
               <div class="col text-center">
                 <img class ="rounded-circle img-fluid d-none d-sm-block" src="https://i.natgeofe.com/n/28f65c83-cb91-4489-ba1e-b62c76863c43/01_slothlove_leaves_square.jpg" width="200" alt="">
-  
-              </div>
+               </div>
               <div class="col">
                 <p>Fun facts about our CEO</p>
                 <ol>
@@ -75,7 +76,7 @@
           </div>
     
     
-    
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </div>
 </body>
