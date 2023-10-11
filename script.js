@@ -8,9 +8,6 @@ function changeImage() {
   }
 }
 
-function
-
-document.getElementByID('myJob').onclick = changeJob
 
 function changeJob() {
     var job = document.getElementById('myJob');
@@ -25,7 +22,16 @@ function changeJob() {
         job.innerHTML = "What even is a job?!?!?!";
     
     } 
-    else {
-      job.inner = "The Chief Extra Oatmeal";
-    }
+    else if (job.innerHTML.match("What even is a job?!?!?!")) {
+        job.innerHTML = "The Chief Extra Test";
+        
+        } 
+    else
+        job.innerHTML = "The Chief Extra Oatmeal";
+}
+
+let z = 0;
+function myMoveFunction() {
+    document.getElementById("demo1").innerHTML = z+=1;
   }
+  
