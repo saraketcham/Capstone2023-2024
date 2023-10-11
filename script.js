@@ -12,20 +12,17 @@ function changeImage() {
 function changeJob() {
     var job = document.getElementById('myJob');
     if (job.innerHTML.match("The Chief Extra Oatmeal")) {
-      job.innerHTML = "The Calloused Energy Oval";
+      job.innerHTML = "The Calloused Eggy Oval";
     }
-    else if (job.innerHTML.match("The Calloused Energy Oval")) {
-        job.innerHTML = "The Crazy Extreme Occupation";
+    else if (job.innerHTML.match("The Calloused Eggy Oval")) {
+        job.innerHTML = "The Crazy Elephant Overdresser ";
+        job.style.backgroundColor = "#0000ff";
     
     } 
-    else if (job.innerHTML.match("The Crazy Extreme Occupation")) {
+    else if (job.innerHTML.match("The Crazy Elephant Overdresser")) {
         job.innerHTML = "What even is a job?!?!?!";
     
     } 
-    else if (job.innerHTML.match("What even is a job?!?!?!")) {
-        job.innerHTML = "The Chief Extra Test";
-        
-        } 
     else
         job.innerHTML = "The Chief Extra Oatmeal";
 }
@@ -35,3 +32,12 @@ function myMoveFunction() {
     document.getElementById("demo1").innerHTML = z+=1;
   }
   
+var image2 = document.getElementById('sloth');
+
+function normalImage(){
+    image2.src = "sloth.avif";
+}
+
+function sleepingImage(){
+    image2.src = "sleepingsloth.jpeg"
+}
