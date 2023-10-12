@@ -8,24 +8,33 @@ function changeImage() {
   }
 }
 
+var job = document.getElementById('myJob');
 
-function changeJob() {
-    var job = document.getElementById('myJob');
-    if (job.innerHTML.match("The Chief Extra Oatmeal")) {
-      job.innerHTML = "The Calloused Eggy Oval";
-    }
-    else if (job.innerHTML.match("The Calloused Eggy Oval")) {
-        job.innerHTML = "The Crazy Elephant Overdresser ";
-        job.style.backgroundColor = "#0000ff";
-    
-    } 
-    else if (job.innerHTML.match("The Crazy Elephant Overdresser")) {
-        job.innerHTML = "What even is a job?!?!?!";
-    
-    } 
-    else
-        job.innerHTML = "The Chief Extra Oatmeal";
-}
+
+
+function changeJob(){
+  if (job.innerHTML.match("The Chief Extra Oatmeal")){
+    job.innerHTML = "The Calloused Eggy Oval";
+    job.style.backgroundColor = "red"
+  }
+  else if (job.innerHTML.match("The Calloused Eggy Oval")){
+    job.innerHTML = "The Crazy Elephant Overdresser";
+    job.style.backgroundColor = "silver"
+  }
+  else if (job.innerHTML.match("The Crazy Elephant Overdresser")){
+    job.innerHTML = "What even is a job?!?!?!";
+    job.style.backgroundColor = "pink"
+  }
+  else if (job.innerHTML.match("What even is a job?!?!?!")){
+    job.innerHTML = "wow";
+    job.style.backgroundColor = "orange"
+  }
+  else{
+    job.innerHTML = "The Chief Extra Oatmeal";
+    job.style.background= "transparent"
+  }
+  }
+
 
 let z = 0;
 function myMoveFunction() {
